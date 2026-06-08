@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  # SQL Server Database
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: vibearena_sqlserver
+    environment:
+      ACCEPT_EULA: 'Y'
+      SA_PASSWORD: 'VibearenaPassword@123'
+      MSSQL_SA_PASSWORD: 'VibearenaPassword@123'
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    healthcheck:
+      test: /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P 'VibearenaPassword@123' -Q 'SELECT 1' -C || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - vibearena_network
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: vibearena_redis
+    command: redis-server --appendonly yes --requirepass vibearena_redis_password
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: [ "CMD", "redis-cli", "--raw", "incr", "ping" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - vibearena_network
+
+  # RabbitMQ Message Queue
+  rabbitmq:
+    image: rabbitmq:3.12-management-alpine
+    container_name: vibearena_rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: vibearena_user
+      RABBITMQ_DEFAULT_PASS: vibearena_password
+    ports:
+      - "5672:5672"      # AMQP port
+      - "15672:15672"    # Management UI
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - vibearena_network
+
+volumes:
+  sqlserver_data:
+  redis_data:
+  rabbitmq_data:
+
+networks:
+  vibearena_network:
+    driver: bridge
