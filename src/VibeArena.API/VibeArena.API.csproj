@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../VibeArena.Core/VibeArena.Core.csproj" />
+    <ProjectReference Include="../VibeArena.Infrastructure/VibeArena.Infrastructure.csproj" />
+    <ProjectReference Include="../VibeArena.Shared/VibeArena.Shared.csproj" />
+    <ProjectReference Include="../VibeArena.Modules.Events/VibeArena.Modules.Events.csproj" />
+    <ProjectReference Include="../VibeArena.Modules.Tickets/VibeArena.Modules.Tickets.csproj" />
+    <ProjectReference Include="../VibeArena.Modules.Orders/VibeArena.Modules.Orders.csproj" />
+    <ProjectReference Include="../VibeArena.Modules.Payments/VibeArena.Modules.Payments.csproj" />
+    <ProjectReference Include="../VibeArena.Modules.Users/VibeArena.Modules.Users.csproj" />
+  </ItemGroup>
+</Project>
