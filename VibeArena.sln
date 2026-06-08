@@ -1,0 +1,82 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.0.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A1B2C3D4-E5F6-47A8-B9C0-D1E2F3A4B5C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E5F6A1B2-C3D4-47A8-B9C0-D1E2F3A4B5C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VibeArena.API", "src\VibeArena.API\VibeArena.API.csproj", "{F1E2D3C4-B5A6-47A8-9C8B-A1B2C3D4E5F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VibeArena.Core", "src\VibeArena.Core\VibeArena.Core.csproj", "{A1B2C3D4-E5F6-47A8-B9C0-D1E2F3A4B5C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VibeArena.Infrastructure", "src\VibeArena.Infrastructure\VibeArena.Infrastructure.csproj", "{B2C3D4E5-F6A7-47A8-C9D0-E1F2A3B4C5D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VibeArena.Modules.Events", "src\VibeArena.Modules.Events\VibeArena.Modules.Events.csproj", "{C3D4E5F6-A7B8-47A8-D9E0-F1A2B3C4D5E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VibeArena.Modules.Tickets", "src\VibeArena.Modules.Tickets\VibeArena.Modules.Tickets.csproj", "{D4E5F6A7-B8C9-47A8-E9F0-A1B2C3D4E5F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VibeArena.Modules.Orders", "src\VibeArena.Modules.Orders\VibeArena.Modules.Orders.csproj", "{E5F6A7B8-C9D0-47A8-F9A0-B1C2D3E4F5A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VibeArena.Modules.Payments", "src\VibeArena.Modules.Payments\VibeArena.Modules.Payments.csproj", "{F6A7B8C9-D0E1-47A8-A9B0-C1D2E3F4A5B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VibeArena.Modules.Users", "src\VibeArena.Modules.Users\VibeArena.Modules.Users.csproj", "{A7B8C9D0-E1F2-47A8-B9C0-D1E2F3A4B5C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VibeArena.Shared", "src\VibeArena.Shared\VibeArena.Shared.csproj", "{B8C9D0E1-F2A3-47A8-C9D0-E1F2A3B4C5D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VibeArena.Tests.Unit", "tests\VibeArena.Tests.Unit\VibeArena.Tests.Unit.csproj", "{C9D0E1F2-A3B4-47A8-D9E0-F1A2B3C4D5E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VibeArena.Tests.Integration", "tests\VibeArena.Tests.Integration\VibeArena.Tests.Integration.csproj", "{D0E1F2A3-B4C5-47A8-E9F0-A1B2C3D4E5F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1E2D3C4-B5A6-47A8-9C8B-A1B2C3D4E5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E2D3C4-B5A6-47A8-9C8B-A1B2C3D4E5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E2D3C4-B5A6-47A8-9C8B-A1B2C3D4E5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E2D3C4-B5A6-47A8-9C8B-A1B2C3D4E5F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2C3D4-E5F6-47A8-B9C0-D1E2F3A4B5C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-E5F6-47A8-B9C0-D1E2F3A4B5C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-E5F6-47A8-B9C0-D1E2F3A4B5C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-E5F6-47A8-B9C0-D1E2F3A4B5C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C3D4E5-F6A7-47A8-C9D0-E1F2A3B4C5D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C3D4E5-F6A7-47A8-C9D0-E1F2A3B4C5D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C3D4E5-F6A7-47A8-C9D0-E1F2A3B4C5D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C3D4E5-F6A7-47A8-C9D0-E1F2A3B4C5D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3D4E5F6-A7B8-47A8-D9E0-F1A2B3C4D5E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3D4E5F6-A7B8-47A8-D9E0-F1A2B3C4D5E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3D4E5F6-A7B8-47A8-D9E0-F1A2B3C4D5E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3D4E5F6-A7B8-47A8-D9E0-F1A2B3C4D5E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4E5F6A7-B8C9-47A8-E9F0-A1B2C3D4E5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E5F6A7-B8C9-47A8-E9F0-A1B2C3D4E5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E5F6A7-B8C9-47A8-E9F0-A1B2C3D4E5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E5F6A7-B8C9-47A8-E9F0-A1B2C3D4E5F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F6A7B8-C9D0-47A8-F9A0-B1C2D3E4F5A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F6A7B8-C9D0-47A8-F9A0-B1C2D3E4F5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F6A7B8-C9D0-47A8-F9A0-B1C2D3E4F5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F6A7B8-C9D0-47A8-F9A0-B1C2D3E4F5A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A7B8C9-D0E1-47A8-A9B0-C1D2E3F4A5B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A7B8C9-D0E1-47A8-A9B0-C1D2E3F4A5B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A7B8C9-D0E1-47A8-A9B0-C1D2E3F4A5B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A7B8C9-D0E1-47A8-A9B0-C1D2E3F4A5B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7B8C9D0-E1F2-47A8-B9C0-D1E2F3A4B5C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B8C9D0-E1F2-47A8-B9C0-D1E2F3A4B5C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B8C9D0-E1F2-47A8-B9C0-D1E2F3A4B5C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7B8C9D0-E1F2-47A8-B9C0-D1E2F3A4B5C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8C9D0E1-F2A3-47A8-C9D0-E1F2A3B4C5D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C9D0E1-F2A3-47A8-C9D0-E1F2A3B4C5D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C9D0E1-F2A3-47A8-C9D0-E1F2A3B4C5D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C9D0E1-F2A3-47A8-C9D0-E1F2A3B4C5D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D0E1F2-A3B4-47A8-D9E0-F1A2B3C4D5E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D0E1F2-A3B4-47A8-D9E0-F1A2B3C4D5E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D0E1F2-A3B4-47A8-D9E0-F1A2B3C4D5E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D0E1F2-A3B4-47A8-D9E0-F1A2B3C4D5E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0E1F2A3-B4C5-47A8-E9F0-A1B2C3D4E5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E1F2A3-B4C5-47A8-E9F0-A1B2C3D4E5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E1F2A3-B4C5-47A8-E9F0-A1B2C3D4E5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E1F2A3-B4C5-47A8-E9F0-A1B2C3D4E5F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
